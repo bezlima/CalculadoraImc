@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inputs">
+            <input type="number" placeholder="PESO" class="weigth" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+            <input type="number" placeholder="ALTURA" class="heigth" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+        </div>
+        <div class="resultado">
+            <p class="result"></p>
+            <p class="classificacao"></p>
+        </div>
+        <div class="enviar">
+            <button class="send"id="send" onclick="sum()">ENVIAR</button>
+        </div>
+    </div>    
+    <script src="js/script.js"></script>
+</body>
+</html>
